@@ -70,7 +70,6 @@ const FormAntenna = ({ antennas }) => {
 
   function handleOnSubmit(event) {
     event.preventDefault();
-    alert(radius);
     const gain =
       10 *
       Math.log10(
@@ -88,9 +87,6 @@ const FormAntenna = ({ antennas }) => {
       (potency * gain * gain * waveLength ** 2) /
       (4 * Math.PI * radius ** 2 * 4 * Math.PI);
     const spreadingLoss = -20 * Math.log10(frequency) - 21.45;
-    alert(
-      `${gain} - ${effectiveOpening} - ${beamWidth} - ${powerFlux} - ${spreadingLoss}`
-    );
     localStorage.setItem(
       "paramSelect",
       JSON.stringify({
@@ -108,6 +104,7 @@ const FormAntenna = ({ antennas }) => {
         potency: potency,
       })
     );
+    router.push("/basic");
   }
 
   return (

@@ -159,7 +159,7 @@ const FormBasic = () => {
             ></input>
           </div>
           <div className="m-2">
-            <label>Received power (Pr): </label>
+            <label>Received potency (Pr): </label>
             <input
               className="rounded border"
               type="number"

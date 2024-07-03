@@ -149,6 +149,7 @@ const FormAntenna = ({ antennas }) => {
                 required
                 value={radius}
                 onChange={handleRadiusChange}
+                min={0}
               ></input>
               <select disabled>
                 <option>m</option>
@@ -162,6 +163,7 @@ const FormAntenna = ({ antennas }) => {
                 required
                 value={potency}
                 onChange={handlePotencyChange}
+                min={0}
               ></input>
               <select disabled>
                 <option>W</option>

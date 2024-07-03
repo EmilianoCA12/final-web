@@ -132,6 +132,7 @@ const FormAntenna = ({ antennas }) => {
               )}
             </select>
             <label className="m-2">Antenna Image</label>
+            <label>{antennas[antennaIndex].antennaName}</label>
             <Image
               className="m-2 rounded-lg"
               src={antennas[antennaIndex].route}
